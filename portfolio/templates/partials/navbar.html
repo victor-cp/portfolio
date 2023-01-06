@@ -1,0 +1,28 @@
+{% load static %}
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-black ">
+    <div class="container">
+        <a class="navbar-brand" href="/">Home</a>
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <hr>
+            </hr>
+            <ul class="navbar-nav ms-auto ">
+                <li class="nav-item d-flex align-items-center">
+                    <a class=" cv-navbar m-2 p-0" href="{% url 'blog:posts' %}">Blog</a>
+                </li>
+                <hr>
+                </hr>
+                <li class="nav-item d-flex align-items-center">
+                    <a class="cv-navbar m-2" href="{% static 'portfolio/cv.pdf' %}" target="_blank">Download
+                        CV</a>
+                </li>
+            </ul>
+            <hr>
+            </hr>
+        </div>
+    </div>
+</nav>
